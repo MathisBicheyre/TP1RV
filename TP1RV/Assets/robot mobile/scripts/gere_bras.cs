@@ -14,7 +14,7 @@ using System.Collections;
 
 public class gere_bras : MonoBehaviour {
 
-public  GameObject O1tierce;
+public GameObject O1tierce;
 public GameObject O2tierce;
 public GameObject O3tierce;
 public GameObject O4tierce;

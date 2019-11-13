@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClavierScript : MonoBehaviour
 {
-	public gere_bras gere_bras = null;
+	public MaterielScript mat;
 	// Start is called before the first frame update
 	void Start()
     {
@@ -14,17 +14,26 @@ public class ClavierScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetKeyUp(KeyCode.RightArrow))
-			gere_bras.increment.x += (float)0.01;
-		if (Input.GetKeyUp(KeyCode.LeftArrow))
-			gere_bras.increment.x -= (float)0.01;
-		if (Input.GetKeyUp(KeyCode.UpArrow))
-			gere_bras.increment.y += (float)0.01;
-		if (Input.GetKeyUp(KeyCode.DownArrow))
-			gere_bras.increment.y -= (float)0.01;
-		if (Input.GetKeyUp(KeyCode.A))
-			gere_bras.increment.z += (float)0.01;
-		if (Input.GetKeyUp(KeyCode.Z))
-			gere_bras.increment.z -= (float)0.01;
+		mat.increment_IR = clavier();
+	}
+
+	public Vector3 clavier()
+	{
+		Vector3 vector = new Vector3(0.0F, 0.0F, 0.0F);
+
+		if (Input.GetKey(KeyCode.RightArrow))
+			vector.y += (float)0.5;
+		if (Input.GetKey(KeyCode.LeftArrow))
+			vector.y -= (float)0.5;
+		if (Input.GetKey(KeyCode.UpArrow))
+			vector.x += (float)0.1;
+		if (Input.GetKey(KeyCode.DownArrow))
+			vector.x -= (float)0.1;
+		if (Input.GetKey(KeyCode.A))
+			vector.z += (float)0.1;
+		if (Input.GetKey(KeyCode.Z))
+			vector.z -= (float)0.1;
+
+		return vector;
 	}
 }
