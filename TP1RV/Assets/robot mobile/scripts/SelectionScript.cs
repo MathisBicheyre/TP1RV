@@ -5,7 +5,7 @@ using UnityEngine;
 public class SelectionScript : MonoBehaviour
 {
 	public gere_bras gere_bras = null;
-
+	//What is this script for.
 
 	// Start is called before the first frame update
 	void Start()

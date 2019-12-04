@@ -5,8 +5,8 @@ using UnityEngine;
 public class MaterielScript : MonoBehaviour
 {
 	public Vector3 increment_IR;
-	public bool B1;
-	public bool B2;
+	public bool B1; //Hold object LeftClick
+	public bool B2; //Camera MiddleClick
 	public bool B3;
 
 	// Start is called before the first frame update

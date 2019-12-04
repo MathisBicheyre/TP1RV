@@ -17,10 +17,28 @@ public class SelectionnableDistScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		print(Vector3.Distance(tool.transform.position, cube.transform.position));
-		if (Vector3.Distance(tool.transform.position, cube.transform.position) < 1)
-			EstSelectionnable = true;
-		else
-			EstSelectionnable = false;
+
     }
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other == tool.GetComponent<Collider>())
+		{
+			EstSelectionnable = true;
+			Debug.Log("Woohoo");
+		}
+		Debug.Log("Collision detected with " + other.name);
+	}
+
+	private void OnTriggerStay(Collider other)
+	{
+		if (other == tool.GetComponent<Collider>())
+			EstSelectionnable = true;
+	}
+
+	private void OnTriggerExit(Collider other)
+	{
+		if (other == tool.GetComponent<Collider>())
+			EstSelectionnable = false;
+	}
 }

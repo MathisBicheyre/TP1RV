@@ -22,9 +22,9 @@ public class ClavierScript : MonoBehaviour
 		Vector3 vector = new Vector3(0.0F, 0.0F, 0.0F);
 
 		if (Input.GetKey(KeyCode.RightArrow))
-			vector.y += (float)0.5;
+			vector.y += (float)1;
 		if (Input.GetKey(KeyCode.LeftArrow))
-			vector.y -= (float)0.5;
+			vector.y -= (float)1;
 		if (Input.GetKey(KeyCode.UpArrow))
 			vector.x += (float)0.1;
 		if (Input.GetKey(KeyCode.DownArrow))
