@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\elie\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\elie\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_TP3RV.-1775986842.00" t="ExcludeRecursive" />
+    <e p="C:\Users\elie\Desktop\Cours\S7\Introduction à la RV\PRJ\TP1\TP3RV" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="robot mobile" t="Include">
+          <e p="scripts" t="Include">
+            <e p="BougeBaseMobile.cs" t="Include" />
+            <e p="ClavierScript0.cs" t="Include" />
+            <e p="EnZoneDepot.cs" t="Include" />
+            <e p="gere_bras.cs" t="Include" />
+            <e p="GereCameras.cs" t="Include" />
+            <e p="MaterielScript.cs" t="Include" />
+            <e p="NavigationScript.cs" t="Include" />
+            <e p="PrendObjet.cs" t="Include" />
+            <e p="SelectionnableDistScript.cs" t="Include" />
+            <e p="SelectionScript.cs" t="Include" />
+            <e p="SourisScript.cs" t="Include" />
+            <e p="ToColor.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="TP3RV.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
